@@ -6,13 +6,18 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+/*
+JPA enables object/relational mapping facility for managing relational data in Java applications
+
+@Id
+ */
 
 @Entity(name = "users")
 public class UserEntity implements Serializable {
 
   private static final long serialVersionUID = 3701351498223983732L;
 
-  @Id
+  @Id // specifies the primary key of an entity and the
   @GeneratedValue
   private long id;
 
