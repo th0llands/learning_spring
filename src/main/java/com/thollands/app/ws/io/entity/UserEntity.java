@@ -17,7 +17,7 @@ public class UserEntity implements Serializable {
 
   private static final long serialVersionUID = 3701351498223983732L;
 
-  @Id // specifies the primary key of an entity and the
+  @Id // specifies the primary key of an entity
   @GeneratedValue
   private long id;
 
