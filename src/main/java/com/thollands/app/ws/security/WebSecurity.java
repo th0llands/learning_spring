@@ -22,7 +22,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
-    // allows all POST requests to /users should be authorized and any other request needs
+    // Allows all POST requests to "/users" and any other request types will need
     // authentication.
     http.csrf()
         .disable()
@@ -35,7 +35,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
   @Override
   public void configure(AuthenticationManagerBuilder auth) throws Exception {
-    // Setting up AuthenticationManagerBuilder comes from the Spring Security Framework
+    // Setting up AuthenticationManagerBuilder comes from the Spring Security Package:
     //  - The userDetailsService interface will be used
     //  - Setting an encryption method that will be used to protect the User's Password
     auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder);
