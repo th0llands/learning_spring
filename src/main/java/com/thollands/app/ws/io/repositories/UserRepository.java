@@ -1,4 +1,4 @@
-package com.thollands.app.ws;
+package com.thollands.app.ws.io.repositories;
 
 import com.thollands.app.ws.io.entity.UserEntity;
 import org.springframework.data.repository.CrudRepository;
